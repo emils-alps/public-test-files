@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/shaka-project/shaka-packager version v3.8.0-75b2faf-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT64.199997S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="video" width="1440" height="1080" frameRate="15360/512" segmentAlignment="true" par="4:3">
+      <SupplementalProperty schemeIdUri="urn:mpeg:mpegB:cicp:TransferCharacteristics" value="1"/>
+      <Representation id="0" bandwidth="7953136" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
+        <SegmentTemplate timescale="15360" initialization="video_app_1080p_00_4M_h264_init.mp4" media="video_app_1080p_00_4M_h264_$Number$.mp4" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="46080" r="2"/>
+            <S t="138240" d="73728"/>
+            <S t="211968" d="46080" r="1"/>
+            <S t="304128" d="26624"/>
+            <S t="330752" d="54272"/>
+            <S t="385024" d="45056"/>
+            <S t="430080" d="38400"/>
+            <S t="468480" d="42496"/>
+            <S t="510976" d="51200"/>
+            <S t="562176" d="45568"/>
+            <S t="607744" d="41472"/>
+            <S t="649216" d="46080"/>
+            <S t="695296" d="79872"/>
+            <S t="775168" d="30720"/>
+            <S t="805888" d="46080" r="1"/>
+            <S t="898048" d="36864"/>
+            <S t="934912" d="46080"/>
+            <S t="980992" d="5120"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="audio" startWithSAP="1" segmentAlignment="true">
+      <Representation id="1" bandwidth="137450" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <SegmentTemplate timescale="44100" initialization="audio_und_2c_128k_aac_init.mp4" media="audio_und_2c_128k_aac_$Number$.mp4" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="133120"/>
+            <S t="133120" d="132096" r="3"/>
+            <S t="661504" d="133120"/>
+            <S t="794624" d="132096" r="3"/>
+            <S t="1323008" d="133120"/>
+            <S t="1456128" d="132096" r="3"/>
+            <S t="1984512" d="133120"/>
+            <S t="2117632" d="132096" r="3"/>
+            <S t="2646016" d="133120"/>
+            <S t="2779136" d="51200"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
